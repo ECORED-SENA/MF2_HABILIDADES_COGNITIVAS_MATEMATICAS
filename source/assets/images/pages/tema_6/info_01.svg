@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360.211" height="149.848" viewBox="0 0 360.211 149.848">
+  <g id="Grupo_14516" data-name="Grupo 14516" transform="translate(-520 -2665)">
+    <rect id="Rectángulo_3479" data-name="Rectángulo 3479" width="360.211" height="149.848" transform="translate(520 2665)" fill="#d5f4fc"/>
+    <text id="Minuendo" transform="translate(724.307 2707)" fill="#00223d" font-size="18" font-family="CerebriSans-Regular, Cerebri Sans"><tspan x="0" y="0">Minuendo</tspan></text>
+    <text id="Sustraendo" transform="translate(724.307 2744.618)" fill="#00223d" font-size="18" font-family="CerebriSans-Regular, Cerebri Sans"><tspan x="0" y="0">Sustraendo</tspan></text>
+    <text id="Diferencia" transform="translate(724.307 2782.618)" fill="#00223d" font-size="18" font-family="CerebriSans-Regular, Cerebri Sans"><tspan x="0" y="0">Diferencia</tspan></text>
+    <g id="Grupo_14495" data-name="Grupo 14495" transform="translate(-5)">
+      <rect id="Rectángulo_3475" data-name="Rectángulo 3475" width="30.98" height="1.766" transform="translate(660.774 2699.899)" fill="#ff9100"/>
+      <g id="Grupo_14117" data-name="Grupo 14117" transform="translate(-755.892 2486.51)">
+        <path id="Trazado_23503" data-name="Trazado 23503" d="M1441.8,221.492l-1.2-1.293,6.377-5.926-6.377-5.928,1.2-1.293,7.765,7.221Z" fill="#ff9100"/>
+      </g>
+      <rect id="Rectángulo_3476" data-name="Rectángulo 3476" width="30.98" height="1.766" transform="translate(660.774 2737.517)" fill="#ff9100"/>
+      <g id="Grupo_14120" data-name="Grupo 14120" transform="translate(-755.892 2476.51)">
+        <path id="Trazado_23504" data-name="Trazado 23504" d="M1441.8,269.11l-1.2-1.293,6.377-5.926-6.377-5.928,1.2-1.293,7.765,7.221Z" fill="#ff9100"/>
+      </g>
+      <rect id="Rectángulo_3476-2" data-name="Rectángulo 3476" width="30.98" height="1.766" transform="translate(660.774 2775.517)" fill="#ff9100"/>
+      <g id="Grupo_14120-2" data-name="Grupo 14120" transform="translate(-755.892 2514.51)">
+        <path id="Trazado_23504-2" data-name="Trazado 23504" d="M1441.8,269.11l-1.2-1.293,6.377-5.926-6.377-5.928,1.2-1.293,7.765,7.221Z" fill="#ff9100"/>
+      </g>
+    </g>
+    <text id="a" transform="translate(617 2707)" fill="#002b45" font-size="28" font-family="CerebriSans-Bold, Cerebri Sans" font-weight="700"><tspan x="-15.354" y="0">a</tspan></text>
+    <text id="_-b" data-name="-b" transform="translate(617 2746)" fill="#002b45" font-size="28" font-family="CerebriSans-Bold, Cerebri Sans" font-weight="700"><tspan x="-31.773" y="0">-b</tspan></text>
+    <text id="c" transform="translate(617 2785)" fill="#002b45" font-size="28" font-family="CerebriSans-Bold, Cerebri Sans" font-weight="700"><tspan x="-16.064" y="0">c</tspan></text>
+    <rect id="Rectángulo_3477" data-name="Rectángulo 3477" width="54.275" height="2.261" transform="translate(574 2756.173)"/>
+  </g>
+</svg>

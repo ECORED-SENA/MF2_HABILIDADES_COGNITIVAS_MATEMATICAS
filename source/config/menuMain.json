@@ -1,0 +1,197 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  {
+    "id": 0,
+    "icon": "fa fa-play",
+    "slug": "introduccion",
+    "title": "Introducción",
+    "breadcrumb": [
+      "Inicio","introduccion"],
+    "path": "pages/introduccion.html"
+  },    
+  {
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "razones_proporciones",
+    "title": "1. Razones y proporciones",
+    "breadcrumb": ["Inicio","Razones y proporciones"],
+    "path": "pages/tema_1.html",    
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.1 Razón",
+        "anchor": "tema1_1"
+      }, 
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.2 Proporción",
+        "anchor": "tema1_2"
+      },  
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.3 Razón de proporcionalidad",
+        "anchor": "tema1_3"
+      },  
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.4 Regla de tres simple",
+        "anchor": "tema1_4"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.5 Regla de tres compuesta",
+        "anchor": "tema1_5"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "razones_proporciones",
+        "title": "1.6 Problemas con proporciones",
+        "anchor": "tema1_6"
+      }
+    ]   
+  },
+  {
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "estructura_aditiva_multiplicativa",
+    "title": "2. Estructura aditiva y multiplicativa",
+    "breadcrumb": ["Inicio","Estructura aditiva y multiplicativa"],
+    "path": "pages/tema_2.html"    
+  },
+  {
+    "id": 3,
+    "icon": "fa fa-file-text",
+    "slug": "teoria_numeros",
+    "title": "3. Teoría de números",
+    "breadcrumb": ["Inicio", "Teoría de números"],
+    "path": "pages/tema_3.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "teoria_numeros",
+        "title": "3.1 Divisibilidad",
+        "anchor": "tema3_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "teoria_numeros",
+        "title": "3.2 Números primos",
+        "anchor": "tema3_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "teoria_numeros",
+        "title": "3.3 Máximo común divisor - M.C.D",
+        "anchor": "tema3_3"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "teoria_numeros",
+        "title": "3.4 Máximo común múltiplo - m.c.m",
+        "anchor": "tema3_4"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "teoria_numeros",
+        "title": "3.5 Problemas con MCD y m.c.m",
+        "anchor": "tema3_5"
+      }    
+    ]
+  },
+  {
+    "id": 4,
+    "icon": "fa fa-file-text",
+    "slug": "fracciones",
+    "title": "4. Fracciones",
+    "breadcrumb": ["Inicio","Fracciones"],
+    "path": "pages/tema_4.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "fracciones",
+        "title": "4.1 Representación de fracciones",
+        "anchor": "tema4_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "fracciones",
+        "title": "4.2 Fracciones equivalentes",
+        "anchor": "tema4_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "fracciones",
+        "title": "4.3 Operaciones con fracciones",
+        "anchor": "tema4_3"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "fracciones",
+        "title": "4.4 Problemas con fracciones",
+        "anchor": "tema4_4"
+      }     
+    ]
+  },
+  {
+    "id": 5,
+    "icon": "fa fa-file-text",
+    "slug": "porcentajes",
+    "title": "5. Porcentajes",
+    "breadcrumb": ["Inicio", "Porcentajes"],
+    "path": "pages/tema_5.html"    
+  },
+  {
+    "id": 6,
+    "icon": "fa fa-file-text",
+    "slug": "numeros_enteros",
+    "title": "6. Números enteros",
+    "breadcrumb": ["Inicio","Números enteros"],
+    "path": "pages/tema_6.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "numeros_enteros",
+        "title": "6.1 Operaciones con números enteros",
+        "anchor": "tema6_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "numeros_enteros",
+        "title": "6.2 Problemas con enteros",
+        "anchor": "tema6_2"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "icon": "fa fa-file-text",
+    "slug": "sistema_medidas",
+    "title": "7. Sistema de medidas",
+    "breadcrumb": ["Inicio","Sistema de medidas"],
+    "path": "pages/tema_7.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "sistema_medidas",
+        "title": "7.1 Sistema de medidas más utilizados",
+        "anchor": "tema7_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "sistema_medidas",
+        "title": "7.2 Problemas con unidades de medida",
+        "anchor": "tema7_2"
+      }
+    ]
+  } 
+]
