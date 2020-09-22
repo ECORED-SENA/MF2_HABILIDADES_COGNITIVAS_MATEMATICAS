@@ -7,7 +7,7 @@
   },  
   {
     "id": 0,
-    "icon": "fa fa-play",
+    "icon": "fa fa-text",
     "slug": "introduccion",
     "title": "Introducción",
     "breadcrumb": [
@@ -16,38 +16,38 @@
   },    
   {
     "id": 1,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play",
     "slug": "razones_proporciones",
     "title": "1. Razones y proporciones",
     "breadcrumb": ["Inicio","Razones y proporciones"],
     "path": "pages/tema_1.html",    
     "submenu": [
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play",
         "slug": "razones_proporciones",
         "title": "1.1 Razón",
         "anchor": "tema1_1"
       }, 
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play",
         "slug": "razones_proporciones",
         "title": "1.2 Proporción",
         "anchor": "tema1_2"
       },  
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play",
         "slug": "razones_proporciones",
         "title": "1.3 Razón de proporcionalidad",
         "anchor": "tema1_3"
       },  
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play",
         "slug": "razones_proporciones",
         "title": "1.4 Regla de tres simple",
         "anchor": "tema1_4"
       },
       {
-        "icon": "fa fa-file-text",
+        "icon": "fa fa-play",
         "slug": "razones_proporciones",
         "title": "1.5 Regla de tres compuesta",
         "anchor": "tema1_5"
