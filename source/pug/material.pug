@@ -37,8 +37,13 @@ html(lang="es")
 
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
                                     +navTemaItem('text', 'Introducción', '#introduccion')
-                                    +navTemaItem('1', 'Normativa vigente proceso ECCL', '#tema-1')
-                                    +navTemaItem('question', 'Actividad didáctica', '#evaluacion')
+                                    +navTemaItem('1', 'Razones y proporciones', '#tema-1')
+                                    +navTemaItem('2', 'Estructura aditiva y multiplicativa', '#tema-2')
+                                    +navTemaItem('3', 'Teoría de números', '#tema-3')
+                                    +navTemaItem('4', 'Fracciones', '#tema-4')
+                                    +navTemaItem('5', 'Porcentajes', '#tema-5')
+                                    +navTemaItem('6', 'Números enteros', '#tema-6')
+                                    +navTemaItem('7', 'Sistema de medidas', '#tema-7')
                                     +navTemaItem('glosary', 'Glosario', '#glosario')
                                     +navTemaItem('folder', 'Material complementario', '#anexos')
                                     +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
@@ -48,9 +53,19 @@ html(lang="es")
             #introduccion
                 include pages/introduccion.pug
             #tema-1
-                include pages/1-tema.pug
-            #evaluacion
-                include pages/actividad-1.pug
+                include pages/tema_1.pug
+            #tema-2
+                include pages/tema_2.pug
+            #tema-3
+                include pages/tema_3.pug
+            #tema-4
+                include pages/tema_4.pug
+            #tema-5
+                include pages/tema_5.pug
+            #tema-6
+                include pages/tema_6.pug
+            #tema-7
+                include pages/tema_7.pug
             #glosario
                 include pages/glosario.pug
             #anexos
