@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Operaciones con números reales</title>
+        <meta meta name="description" content="Aprender sobre las operaciones con números reales permite realizar todo tipo de operaciones matemáticas para resolver problemas de la vida cotidiana.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de Aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Índice temático</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Habilidades cognitivas en matemáticas</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Operaciones con números reales</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">Aprender sobre las operaciones con números reales permite realizar todo tipo de operaciones matemáticas para resolver problemas de la vida cotidiana.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul>
+                            <li>20201501-02 - Plantear problemas aritméticos, geométricos y métricos de acuerdo con los contextos productivo y social.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-file-text-o"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#introduccion">Introducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#introduccion">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Razones y proporciones</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Estructura aditiva y multiplicativa</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Teoría de números</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-4">Fracciones</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-4">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">5</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-5">Porcentajes</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-5">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">6</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-6">Números enteros</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-6">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">7</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-7">Sistema de medidas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-7">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="introduccion">
+                <div class="container" id="page-introduccion">
+                    <div class="header-ecored">
+                        <h1>Introducción</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card"><img class="img-a mx-0 img-fluid" src="assets/images/pages/02.jpg">
+                                <div class="card-body mt-0">
+                                    <p>La importancia del conocimiento de los números racionales (naturales, enteros, radicales, fracciones, etc.), se halla en la gran cantidad de operaciones que se pueden realizar con ellos en la solución de problemas rutinarios. La aplicabilidad de estos conceptos es lo que le da sentido al aprendizaje de estos sistemas numéricos, puesto que es una aproximación a la comprensión de problemas reales en tanto que ayudan a modelar aspectos de diferentes áreas como las ciencias naturales, sociales, física, química, estadística, y demás. Entender el papel que juegan los sistemas de medidas, los sistemas numéricos, las proporciones, fracciones, estructuras aditivas y multiplicativas, puede ayudar a organizar el pensamiento del individuo para comprender mejor cómo establecer relaciones entre estos sistemas y llevarlos a la práctica.</p><br>
+                                    <p>Lo que vas a aprender a continuación está relacionado con temáticas referentes a razón, proporción, regla de tres, sistema de números enteros, fraccionarios, porcentajes, equivalencias y conversiones, para enfrentar problemas que pueden ser solucionados a partir de la aplicación de diferentes técnicas estratégicas con una base conceptual sólida. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-1">
+                <div class="container" id="tema_1">
+                    <div class="header-ecored">
+                        <h1>1. Razones y proporciones</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_1">
+                                    <h2>1.1 Razón </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xiehHcxf7KE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_2">
+                                    <h2>1.2 Proporción </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/CG-BWQZy900" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_3">
+                                    <h2>1.3 Razón de proporcionalidad </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/iVP-mVNq4NQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mb-5 mt-5">
+                            <div class="col-12">
+                                <h3>Propiedades de las proporciones</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>1 </span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">El producto de los extremos es igual al producto de los medios:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_1/info_08.svg" alt=""></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>2 </span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Media proporcional o media geométrica: raíz cuadrada del producto de los extremos igual a la raíz cuadrada del producto de los medios:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_1/info_09.svg" alt=""></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>3 </span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Cuarta proporcional: es uno de los términos de una proporción el cuál es desconocido y se halla multiplicando los medios o los extremos y dividendo por el opuesto:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_1/info_10.svg" alt=""></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>4 </span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-0">Tercera proporcional: es uno de los términos de una proporción el cuál es desconocido, los extremos son iguales y se halla elevándolos al cuadrado y dividiendo por el término desigual:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_1/info_11.svg" alt=""></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_4">
+                                    <h2>1.4 Regla de tres simple </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/0Ty1Vb9wW3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_5">
+                                    <h2>1.5 Regla de tres compuesta </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/NRjLgU964v4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema1_6">
+                                    <h2>1.6. Problemas con Proporciones</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>En el siguiente enlace encontrarás como ejemplos de aplicación unos problemas resueltos de proporciones que te mostrarán la aplicabilidad de estas magnitudes en la vida cotidiana.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"><a href="media/documentos/Razones_Proporciones.pdf" target="_blank"><img class="img-fluid" src="assets/images/pages/tema_1/cover_01.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container" id="tema_2">
+                    <div class="header-ecored">
+                        <h1>2. Estructuras aditiva y multiplicativa </h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"><a href="media/documentos/Estructura_Aditiva_Multiplicativa.pdf" target="_blank"><img class="img-fluid" src="assets/images/pages/tema_2/cover_01.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container" id="tema_3">
+                    <div class="header-ecored">
+                        <h1>3. Teoría de números</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema3_1">
+                                    <h2>3.1 Divisibilidad </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-0">Sean a y b números enteros (número positivo o negativo no fraccionado); <strong>a es divisible entre b</strong>, si el residuo de a / b es cero. </p>
+                            </div>
+                            <div class="col-12 my-5">
+                                <h3>Ejemplos</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-5 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/info_01.png" alt=""></div>
+                            <div class="col-12 col-lg-7">
+                                <p>Se observa que:</p>
+                                <ul>
+                                    <li class="mb-3">54 es divisible entre 6 puesto que el residuo es 0.</li>
+                                    <li class="mb-3">20 es divisible entre 10 puesto que el residuo es 0.</li>
+                                    <li class="mb-3">380 no es divisible entre 12 puesto que el residuo es 8.</li>
+                                </ul>
+                                <p>Recordemos que el múltiplo de un número es el que lo contiene un número exacto de veces, por ejemplo:</p>
+                                <ul>
+                                    <li class="mb-3">54 es múltiplo de 9 por que lo contiene 6 veces exactas.</li>
+                                    <li class="mb-3">48 es múltiplo de 8 por que lo contiene 6 veces exactas.</li>
+                                    <li>20 es múltiplo de 4 por que lo contiene 5 veces exactas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Para visualizar cuando un número es divisible entre otro sin necesidad de efectuar la división recurrimos a los <strong>criterios de divisibilidad.</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p><strong>Divisibilidad entre 2</strong> </p>
+                                        <p>Un número es divisible entre dos si es par.</p>
+                                        <p><strong>Ejemplo</strong> </p>
+                                        <p class="mb-0"> 12, 22, 28, 34, 46, 68 son divisibles entre 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p><strong>Divisibilidad entre 3</strong> </p>
+                                        <p>Un número es divisible entre tres si la suma de sus dígitos es múltiplo de 3.</p>
+                                        <p><strong>Ejemplo</strong></p>
+                                        <p class="mb-0">117 es divisible entre 3 porque: 1+1+7 = 9 y 9 es múltiplo de 3. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p><strong>Divisibilidad entre 4</strong> </p>
+                                        <p>Un número es divisible entre cuatro si sus dos últimos dígitos son 0 o un múltiplo de 4.</p>
+                                        <p><strong>Ejemplo</strong> </p>
+                                        <p class="mb-0">156, los dos últimos dígitos son múltiplos de 4. El número 56 es múltiplo de 4.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p><strong>Divisibilidad entre 5</strong> </p>
+                                        <p>Un número es divisible entre cinco si termina en 0 o 5.</p>
+                                        <p><strong>Ejemplo</strong> </p>
+                                        <p class="mb-0">8125 es divisible entre 5, el número 13200 también es divisible entre 5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema3_2">
+                                    <h2>3.2 Números primos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Un número es primo cuando solo se puede dividir por sí mismo y la unidad, a excepción del número “1” <strong>que no es primo.</strong></p>
+                                <p><strong>Ejemplo</strong></p>
+                                <p class="mb-0">El conjunto de los números primos entre 1 y 100 son: &#123 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 &#125</p>
+                            </div>
+                            <div class="hr-divider my-5"></div>
+                            <div class="col-12 mb-3">
+                                <h3>Descomposición de un número en sus factores primos</h3>
+                            </div>
+                            <div class="col-12">
+                                <p>Todo número natural no primo (compuesto) se puede expresar como la multiplicación de dos o más números primos llamados factores primos. </p>
+                                <p>Entonces, para descomponer un número compuesto en sus factores primos se siguen los siguientes pasos:</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p>Se escribe el número a la izquierda de una raya vertical que hace las veces de una ventana que divide, a la derecha se colocan los números primos por los cuales dicho número es divisible y el cociente obtenido se coloca debajo del número compuesto.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p>Con el cociente obtenido en el paso anterior, se procede igual hasta llegar a un cociente igual a 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5 mb-3">
+                                <h3>Ejemplo</h3>
+                            </div>
+                            <div class="col-12">
+                                <p>Descomponer en factores primos el número "24".</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5">
+                            <div class="col-12 col-lg-8 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_02.svg" alt=""></div>
+                            <div class="col-12 mt-5">
+                                <p>Observe que 24 no es número primo y los factores en los que está descompuesto si lo son: 2 y 3.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 mb-5">
+                                <p>Haz una pausa y realiza el siguiente ejercicio de práctica para comprobar tu aprendizaje:</p>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_03.svg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema3_3">
+                                    <h2>3.3 Máximo común divisor - MCD</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="col-12">
+                                <p>El máximo común divisor entre dos números a y b es el número más grande que divide a “a” y divide a “b”. Este concepto se expresa así:</p>
+                            </div>
+                            <div class="jumbotron my-4">
+                                <p class="mb-0"><strong>M.C.D. (a, b) o MCD (a, b)</strong></p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 mb-3">
+                                <h3>Ejemplo </h3>
+                                <p>Calular el MCD (12 y 18). </p>
+                                <p>El número que se busca debe dividir a 12 y a 18, luego no puede ser mayor que 12, entonces:</p>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/info_04.svg" alt=""></div>
+                            <div class="col-12">
+                                <p>Puesto que el máximo común divisor debe dividir a ambos números, las únicas posibilidades son: &#123 1, 2, 3, 6 &#125. Como tiene que ser el más grande posible, el MCD es 6, entonces:</p>
+                            </div>
+                            <div class="jumbotron my-4">
+                                <p class="mb-0"><strong>M.C.D (12, 18) = 6</strong></p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <h3>MCD de más de dos números</h3>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <p>Los números se descomponen en sus factores primos hasta que ya no tengan un divisor primo en común, entonces los números primos obtenidos se multiplican y el producto es el resultado. </p>
+                                <h3 class="mt-5">Ejemplo</h3>
+                                <p>Calcular el MCD (60, 90, 150).</p>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/info_05.svg" alt=""></div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="jumbotron">
+                                <p class="mb-0"><strong>M.C.D = 5*3*2 = 30</strong> </p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 mb-5">
+                                <p>Haz una pausa y realiza el siguiente ejercicio de práctica para comprobar tu aprendizaje:</p>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_06.svg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema3_4">
+                                    <h2>3.4 Mínimo común múltiplo - m.c.m</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 mb-5">
+                                <p>El mínimo común múltiplo de dos o más números a y b es el número más pequeño que es múltiplo de a y múltiplo de b. Se expresa así:</p>
+                            </div>
+                            <div class="jumbotron">
+                                <p class="mb-0"><strong>m.c.m (a, b) o mcm (a, b)</strong> </p>
+                            </div>
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Calcular el m.c.m (4,6)</p>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_3/info_07.svg" alt=""></div>
+                            <div class="col-12 mb-5">
+                                <p>Observe que los números marcados en rojo son múltiplos comunes de ambos, entonces el m.c.m es el más pequeño, es decir 12.</p>
+                            </div>
+                            <div class="jumbotron">
+                                <p class="mb-0"><strong>m.c.m (4, 6) = 12</strong> </p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <h3>m.c.m de más de dos números</h3>
+                                <p>Los números se descomponen simultáneamente en sus factores primos hasta que los cocientes sean iguales a 1, si alguno de los números no es divisible por el factor dado, se baja y se continua hasta encontrar el factor primo que lo divida. </p>
+                                <h3 class="mt-5">Ejemplo</h3>
+                                <p>Calcular el m.c.m (25, 30, 150), tomado de Aguilar (2015).</p>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_3/info_08.svg" alt=""></div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="jumbotron">
+                                <p class="mb-0"><strong>m.c.m = 2*3*5*5 = 150</strong></p>
+                            </div>
+                            <div class="col-12">
+                                <p>Obsérvese que cuando 25 no fue divisible por 3, se bajó y se continuó hasta que los cocientes se igualaron a 1.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 mb-5">
+                                <p>Haz una pausa y realiza el siguiente ejercicio de práctica para comprobar tu aprendizaje:</p>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_09.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema3_5">
+                                    <h2>3.5 Problemas con M.C.D y m.c.m</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>A</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p>Marina y Raúl almuerzan en el mismo restaurante, pero Marina asiste cada 20 días y Raúl cada 30 días, ¿cuándo volverán a encontrarse Marina y Raúl?</p>
+                                        <p><strong>Solución</strong></p>
+                                        <p>Ambos coinciden cuando asisten el mismo día, es decir cuando asisten un día que es múltiplo de 20 y múltiplo de 30 y el primer día que coinciden es el mínimo de los múltiplos comunes, por lo tanto, se debe calcular el mínimo común múltiplo o el m.c.m (20, 30)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_11.svg" alt=""></div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="jumbotron mb-5">
+                                <p class="mb-0"><strong>m.c.m = 2*2*3*5 = 60</strong></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-center">El anterior resultado quiere decir que Marina y Raúl volverán a encontrarse dentro de 60 días.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>B</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p>Catalina tiene 12 chocolates para repartir entre sus amigos y Beatriz tiene 18, si desean repartir los chocolates de modo que todos tengan la misma cantidad y sea la mayor posible ¿Cuántos chocolates repartirán a cada persona? y ¿a cuantos amigos regalará cada uno de ellos?.</p>
+                                        <p><strong>Solución</strong></p>
+                                        <p>Como la cantidad a repartir debe ser la máxima para cada persona se debe calcular el máximo común divisor de 12 y 18, es decir:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_3/info_10.svg" alt=""></div>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-5">
+                            <div class="jumbotron mb-5">
+                                <p class="mb-0"><strong>M.C.D = 2*3 = 6</strong></p>
+                            </div>
+                            <div class="col-12">
+                                <p>El anterior resultado quiere decir que cada persona recibirá 6 chocolates. </p>
+                                <p>Como Catalina tiene 12 chocolates y dará 6 a cada persona, entonces los repartirá entre 2 personas; porque (12 / 6 = 2).</p>
+                                <p>Como Beatriz tiene 18 chocolates y dará 6 a cada persona, entonces los repartirá entre 3 personas; porque (18 / 6 = 3).</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row my-5">
+                            <div class="col-auto"> </div><a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=6" target="_blank">
+                                <div class="media_link">
+                                    <div class="media_link__icon icon--lg"><img src="assets/images/pages/medialink.svg" alt=""></div>
+                                    <div class="media_link__txt">
+                                        <p>Consulta el recurso externo para ampliar el conocimiento </p>
+                                        <p>Para aprender más criterios de divisibilidad, consulta las páginas 35 y 36 y resuelve el ejercicio 20 de la página 36 de <strong>Aguilar, A. (2015).</strong> Matemáticas simplificadas.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Para aprender más </h3>
+                                <div class="hr-orange"></div>
+                                <p class="mt-3">En el siguiente enlace encontrarás unos problemas resueltos de M.C.D y m.c.m que te mostrarán la aplicabilidad de estos conceptos en la vida cotidiana: </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="media/documentos/Recurso_2_MCD_MCM.pdf" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_pdf.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Material complemetario.</strong> Recurso: MCD y m.c.m</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Para practicar</h3>
+                                <div class="hr-orange"></div>
+                                <p class="mt-3">Resuelve los ejercicios que encuentras en el siguiente enlace: </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="media/documentos/complementarios/Ejercicios_Practica_MCD_mcm.pdf" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_pdf.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Material complementario.</strong> Ejercicios de práctica de M.C.D y m.c.m</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container" id="tema_4">
+                    <div class="header-ecored">
+                        <h1>4. Fracciones</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-0">Se llama fracción a toda expresión a/b , donde a y b son números enteros y “a” se denomina numerador y “b” denominador y “a” puede ser menor o mayor que “b”, También “b” debe ser un número diferente de cero. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema4_1">
+                                    <h2>4.1 Representación de fracciones </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Fracción propia</h3>
+                                        <p class="mb-5">Se llama fracción propia a la expresión a/b , donde <strong>“a es menor que (<) b”.</strong>
+                                        </p>
+                                        <h3>Ejemplo</h3>
+                                        <p>La fracción 2/5 , indica que la unidad se divide en 5 partes, de las cuales se toman 2. </p>
+                                        <p>Gráficamente se representa como sigue: </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-5 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_4/info_01.svg" alt=""></div>
+                        </div>
+                        <p class="mt-3 text-center">La parte de color rojo representa el numerador de la fracción. </p>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Fracción impropia </h3>
+                                        <p class="mb-5">Dado que, al dividir la unidad en 5 partes, no es posible tomar 11, por tanto, debe tomarse más de una unidad, en este caso, deberían tomarse mínimo tres para poder tomar las 11.</p>
+                                        <h3>Ejemplo</h3>
+                                        <p>La fracción 11/5, indica que la unidad se divide en 5 partes iguales de las cuales se deben tomar 11, pero esto no es posible, luego se deben tomar 3 unidades y se dividen en 5 partes iguales cada una y de ellas se deben tomar las 11 que se necesitan, gráficamente se representa así: </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_4/info_02.svg" alt=""></div>
+                            <div class="col-12">
+                                <p class="text-center">Las partes de color rojo indican el valor del numerador.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Fracción mixta </h3>
+                                        <p class="mb-5">Se llama fracción mixta a la expresión n a/b , donde n es un número entero unido a la fracción. </p>
+                                        <h3>Ejemplo</h3>
+                                        <p> La fracción 2 3/4 significa que se poseen 2 unidades y ¾ de unidad, de tal forma que tener 2 ¾ significa tener 8/4 +3/4 de unidad, es decir, 11/4. Note que este resultado se obtiene dejando como numerador al producto de 2*4 + 3 y como denominador a 4. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_4/info_03.svg" alt=""></div>
+                            <div class="col-12">
+                                <p class="text-center">Luego la anterior expresión en fracción impropia es 11/4 y gráficamente se expresa:</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_4/info_04.svg" alt=""></div>
+                            <div class="col-12 mb-5">
+                                <p class="text-center">Las partes de color rojo representan el numerador de la fracción impropia.</p>
+                            </div>
+                            <div class="col-12">
+                                <p>En la fracción mixta obsérvese que el entero “2” representa dos unidades completas de 4 partes y la fracción ¾, indica que de la última unidad se necesitan 3 de las 4 partes para completar las 11. </p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Convertir una fracción impropia en una fracción mixta </h3>
+                                        <p class="mb-5">Para convertir una fracción impropia en una fracción mixta lo que se hace es dividir el numerador (dividendo) entre el denominador (divisor): el resultado (cociente) de la división se toma como el número entero, el resultado de la resta (residuo) como el numerador y el divisor como el denominador. </p>
+                                        <h3>Ejemplo</h3>
+                                        <p>Convertir la fracción impropia 11/4 en una fracción mixta.</p>
+                                        <p>Entonces se realiza el proceso de división de 11 (dividendo) entre 4 (divisor), de esto se obtiene como resultado de la división 2 (cociente) y como resultado de la resta 3 (residuo) que se toma como numerador y 4 se toma como el denominador: </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_4/info_05.svg" alt=""></div>
+                            <div class="col-12">
+                                <p class="text-center">Luego 11/4, se puede expresar como 2 3/4</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema4_2">
+                                    <h2>4.2 Fracciones equivalentes </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <p>Sean a/b y c/d dos fracciones equivalentes; si al escribirse de manera diferente, representan la misma cantidad y para averiguar si lo son, se multiplica el numerador de la primera por el denominador de la segunda y el resultado debe ser igual al resultado de multiplicar el denominador de la primera por el numerador de la segunda; es decir:</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-8 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_4/info_06.svg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p class="mb-5">Comprobar si 2/5 es equivalente a 10/25. </p>
+                                <p>Aplicando lo que significa dos fracciones equivalentes se tiene que:</p>
+                            </div>
+                            <div class="jumbotron mb-3 ml-3">
+                                <p class="mb-0"><strong>(2 x 25) = 50 y 10 x 5 = 50</strong></p>
+                            </div>
+                            <div class="col-12">
+                                <p>luego:</p>
+                            </div>
+                            <div class="jumbotron mb-3 ml-3">
+                                <p class="mb-0"><strong>50 = 50</strong></p>
+                            </div>
+                            <div class="col-12">
+                                <p>Entonces las fracciones son equivalentes.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema4_3">
+                                    <h2>4.3 Operaciones con fracciones </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Suma y resta con igual denominador </h3>
+                                        <p class="mb-5">Para sumar o restar dos fracciones cuyo denominador es igual, se suman o restan los dos numeradores y se deja el mismo denominador. </p>
+                                        <h3>Ejemplo</h3>
+                                        <p class="mb-0">Hallar el valor de la siguiente operación:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0"><strong>2/5 + 3/5 – 1/5</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Entonces se suman los numeradores con signo positivo y se resta el que tiene signo negativo: (2 + 3 -1) = 4, se deja el mismo denominador, luego el resultado de la operación es 4/5.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Suma y resta con diferente denominador </h3>
+                                        <p>Se busca el mínimo común múltiplo de los denominadores, también conocido como común denominador, éste se divide entre cada uno de los denominadores de las fracciones y los resultados se multiplican por su correspondiente numerador. Los números que resultan se suman o se restan para obtener el resultado final (Aguilar, 2015). </p>
+                                        <p class="mb-5"> Veamos los siguientes ejemplos que propone Aguilar (2015):</p>
+                                        <h3>Ejemplo 1</h3>
+                                        <p class="mb-0">Calcular:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0"><strong>3/2 + 1/3 + 2/6</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>Solución</h3>
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>A</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se halla el mínimo común múltiplo de los denominadores o el denominador común entre 2, 3 y 6. Se hace el cálculo como se aprendió anteriormente y el resultado es 6. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>B</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>El m.c.m hallado (6) se divide por cada uno de los denominadores y el resultado se multiplica por su respectivo numerador, posteriormente se suman los resultados de los productos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>C</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se calcula entonces:</p><img class="img-fluid" src="assets/images/pages/tema_4/f1.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>D</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Entonces el resultado de la operación es 13/6</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hr-divider mb-5"></div>
+                                        <h3>Ejemplo 2</h3>
+                                        <p class="mb-0">Calcular:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0"><strong>1/2 - 1/5</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>Solución</h3>
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>A</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>El m.c.m o el común denominador de 2 y 5 es 10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>B</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>El m.c.m hallado (10) se divide por cada uno de los denominadores y el resultado se multiplica por su respectivo numerador, posteriormente se restan los resultados de los productos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>C</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Entonces se efectúan las operaciones:</p><img class="img-fluid" src="assets/images/pages/tema_4/f2.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>D</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Entonces el resultado de la operación es 3/10 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hr-divider mb-5"></div>
+                                        <h3>Ejemplo 3</h3>
+                                        <p class="mb-0">Calcular:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0">3 1/6 - 1 1/2 + 1/3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>Solución</h3>
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>A</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se convierten las fracciones mixtas a fracciones impropias por el método aprendido anteriormente, entonces las fracciones son: </p>
+                                                        <p class="mb-0">19/6 - 3/2 + 1/3 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>B</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se obtiene el mínimo común múltiplo de los denominadores (6, 2, 3) y se obtiene que el resultado es 6.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>C</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>El resultado se divide por cada denominador y se multiplica por su respectivo numerador obteniéndose: </p><img class="img-fluid" src="assets/images/pages/tema_4/f3.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>D</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Entonces el resultado de la operación es 2</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Multiplicación de fracciones </h3>
+                                        <p class="mb-5">Para llevar a cabo esta operación se multiplican los numeradores y denominadores y si es posible se simplifica la fracción. Cuando las fracciones son tipo mixta lo primero que se hace es convertirlas a fracciones impropias. </p>
+                                        <h3>Ejemplo 1</h3>
+                                        <p class="mb-0">Calcular:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0"><strong>4/5 x 1/6</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Son fracciones impropias, luego se puede realizar la operación directamente:</p><img class="img-fluid mb-3" src="assets/images/pages/tema_4/f4.png" alt="">
+                                        <div class="hr-divider mb-5"></div>
+                                        <h3>Ejemplo 2</h3>
+                                        <p class="mb-0">Calcular:</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron my-4">
+                                                    <p class="mb-0"><strong> 2 3/4 x 4 1/5 </strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Lo primero que se debe hacer es convertir las expresiones a fracciones impropias, entonces queda:</p>
+                                        <p><strong> 11/4 x 21/5 = (11 x 21)/(4 x 5) = 231/20</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>División de fracciones </h3>
+                                        <p class="mb-5">Aguilar (2015) define la división entre fracciones en dos pasos:</p>
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>1</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se multiplica el numerador de la primera fracción por el denominador de la segunda fracción, el producto es el numerador de la fracción resultante.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="list__item__bulletNumber"><span>2</span></div>
+                                                    </div>
+                                                    <div class="list__txt">
+                                                        <p>Se multiplica el denominador de la primera fracción por el numerador de la segunda fracción, el producto es el denominador de la fracción resultante.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-5">Entonces esta operación se realiza de la siguiente manera:</p>
+                                        <div class="row justify-content-center align-items-center mb-5">
+                                            <div class="col-12 col-lg-5 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_4/info_07.svg" alt=""></div>
+                                        </div>
+                                        <h3>Ejemplo 1</h3>
+                                        <p>Calcular:</p><img class="img-fluid" src="assets/images/pages/tema_4/f5.png" alt="">
+                                        <p></p><img class="img-fluid mb-3" src="assets/images/pages/tema_4/f6.png" alt="">
+                                        <div class="hr-divider mb-5"></div>
+                                        <h3>Ejemplo 2</h3>
+                                        <p class="mb-0">Calcular:</p><img class="img-fluid my-3" src="assets/images/pages/tema_4/f7.png" alt="">
+                                        <p>Lo primero que se debe hacer es convertir las expresiones a fracciones impropias, luego se tiene:</p><img class="img-fluid" src="assets/images/pages/tema_4/f8.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema4_4">
+                                    <h2>4.4 Problemas con fracciones </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-5">
+                                <p class="mb-0">Observa el siguiente video para aprender un poco más sobre cómo resolver situaciones de la vida diaria con operaciones con fracciones. </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="https://youtu.be/Wp9SABu3RRo" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_www.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Material complemetarios.</strong> Problema resuelto con división de fracciones</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-5">
+                                <h3>Para practicar</h3>
+                                <hr class="hr-orange">
+                                <p class="mb-0">Resuelve los ejercicios que encuentras en el siguiente enlace: </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="media/documentos/complementarios/Ejercicios_Practica_Operaciones_con_fracciones.pdf" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_pdf.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Material complementario.</strong> Ejercicios de práctica: operaciones con fracciones</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row my-5">
+                            <div class="col-auto"> </div><a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=89" target="_blank">
+                                <div class="media_link">
+                                    <div class="media_link__icon icon--lg"><img src="assets/images/pages/medialink.svg" alt=""></div>
+                                    <div class="media_link__txt">
+                                        <p><strong> Ejercicios de práctica</strong></p>
+                                        <p>Resuelve los ejercicios que encuentras <strong>dando clik aquí.</strong></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-5">
+                <div class="container" id="tema_4">
+                    <div class="header-ecored">
+                        <h1>5. Porcentajes</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"><a href="media/documentos/Porcentajes.pdf" target="_blank"><img class="img-fluid" src="assets/images/pages/tema_5/cover_01.png" alt=""></a></div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-auto"> </div><a href="media/documentos/Recurso_3_Porcentajes.pdf" target="_blank">
+                                <div class="media_link">
+                                    <div class="media_link__icon icon--lg"><img src="assets/images/pages/medialink.svg" alt=""></div>
+                                    <div class="media_link__txt">
+                                        <p><strong>Para aprender más</strong></p>
+                                        <p>Observa atentamente unos problemas resueltos de porcentajes que te mostrarán la aplicabilidad de estas magnitudes en la vida cotidiana. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <h3>Para practicar </h3>
+                                <hr class="hr-orange">
+                                <p class="mb-0">Resuelve los ejercicios de aplicación que encuentras en el siguiente enlace: </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="media/documentos/complementarios/Ejercicios_Practica_Porcentajes.pdf" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_pdf.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Material complemetario.</strong> Ejercicios práctica porcentajes </p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-6">
+                <div class="container" id="tema_6">
+                    <div class="header-ecored">
+                        <h1>6. Números enteros</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12">
+                                <p>Los números enteros son aquellos que expresan una cantidad con relación a su unidad y están representados por el conjunto de los números naturales y sus negativos, por ejemplo: </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="jumbotron my-4">
+                                    <p class="mb-0"><strong>{…-6, -5, -4, -3, -2, -1, 0, 1, 2, 4, 5, 6…}.</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Lo anterior quiere decir que con los números enteros se pueden representar cantidades enteras positivas y cantidades enteras negativas y es por esto por lo que cuando sumamos o restamos números enteros, el resultado seguirá siendo un número entero.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema6_1">
+                                    <h2>6.1 Operaciones con números enteros</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Suma</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>De acuerdo con Ibáñez (2018); en esta operación los elementos reciben el nombre de sumandos y el resultado suma o adición. </p>
+                                <p class="mb-0">La suma o adición de números enteros se efectúa solo si los signos de los números son iguales. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                                <p>Realizar las siguientes operaciones </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>8 + 4 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>En esta operación ambos sumandos tienen el mismo signo (+), por lo tanto, se suman sus valores absolutos y el signo del resultado es el mismo (+).</p>
+                                <p><strong>Respuesta: 8 + 4 = 12</strong></p>
+                            </div>
+                        </div>
+                        <p>Realizar las siguientes operaciones </p>
+                        <div class="row align-items-start">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>- 4 - 1 - 5 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Los números tienen el mismo signo (−), por lo tanto, se suman sus valores absolutos y el signo del resultado es el mismo que el de los sumandos (−).</p>
+                                <p><strong>Respuesta: - 4 - 1 - 5 = -10</strong></p>
+                                <p>Para sumar números de dos o más dígitos, los sumandos se ordenan en forma vertical para hacer coincidir las respectivas clases y se realiza la operación, columna por columna y de derecha a izquierda (Ibáñez, 2018). </p>
+                            </div>
+                        </div>
+                        <p>Realizar las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>225 + 83 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Los números se acomodan de manera vertical y se efectúa la operación:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>225</strong></p>
+                                        <p class="text-right mb-0"><strong>+ 83</strong></p>
+                                        <p class="text-right mb-0"><strong>-----</strong></p>
+                                        <p class="text-right mb-0"><strong>308</strong> </p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="ml-5"><strong>Por tanto, el resultado es 308</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-5">Realizar las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>- 1500 - 2780 - 517 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Los números se acomodan de manera vertical y se efectúa la operación:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>- 1500</strong></p>
+                                        <p class="text-right mb-0"><strong>- 2780</strong></p>
+                                        <p class="text-right mb-0"><strong>- 517</strong></p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>- 4797</strong> </p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-5 ml-5"><strong>Por tanto, el resultado es - 4797</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Resta</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Es la operación inversa de la suma o adición. Los elementos de una resta son el minuendo (+), sustraendo (−) y la diferencia (Ibáñez, 2018). </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-5 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_6/info_01.png" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Cuando se restan 2 números enteros la diferencia lleva el signo del entero de mayor valor absoluto.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                                <p>Calcular las siguientes operaciones</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>10 - 7 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p><strong>Respuesta: 10 - 7 = 3</strong></p>
+                            </div>
+                        </div>
+                        <p>Calcular las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>5 - 9 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p><strong>Respuesta: 5 - 9 = -4</strong></p>
+                            </div>
+                        </div>
+                        <p>Calcular las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-4">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>380 - 400 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Los números se acomodan de manera vertical y se efectúa la operación:</p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>380</strong></p>
+                                        <p class="text-right mb-0"><strong>- 400</strong> </p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>- 20</strong> </p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-0 ml-5"><strong>Por tanto, el resultado es - 20</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Suma y resta con signos de agrupación</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Al realizar sumas y restas de números enteros que tienen signos de agrupación, primero es necesario eliminar dichos signos. </p>
+                                <p>Si a un signo de agrupación lo precede un signo positivo, el número entero que encierra conserva su signo. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                                <p>Resuelva las siguientes operaciones</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>(− 3) + (− 9) = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong> </p>
+                                <p>Como ambos signos de agrupación están precedidos por signos positivos, entonces se suprimen y se realiza la operación para obtener el resultado:</p>
+                                <p><strong>(− 3) + (− 9) = − 3 − 9 = −12</strong></p>
+                            </div>
+                        </div>
+                        <p>Resuelva las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>(+ 5) + (− 8) = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong> </p>
+                                <p>Al estar precedidos por signos positivos, ambos enteros conservan su signo y se obtiene como resultado:</p>
+                                <p><strong>(+ 5) + (− 8) = 5 − 8 = − 3</strong></p>
+                            </div>
+                        </div>
+                        <p>Resuelva las siguientes operaciones</p>
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>&#91 (− 8 + 6) − (− 3 − 2) &#93 + &#91 4 − (2 − 1) &#93 = ?</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong> </p>
+                                <p>Se efectúan las operaciones contenidas en los paréntesis:</p>
+                                <p><strong>&#91(− 8 + 6) − (− 3 − 2)&#93 + &#91 4 − (2 − 1)&#93 = &#91(− 2) − (− 5)&#93 + &#91 4 − (1)&#93</strong></p>
+                                <p>Se eliminan los paréntesis y se realizan las operaciones que encierran los corchetes:</p>
+                                <p><strong>= &#91− 2 + 5 &#93 + &#91 4 − 1 &#93</strong></p>
+                                <p><strong>= &#91 3 &#93 + &#91 3 &#93</strong></p>
+                                <p><strong>= 6</strong> </p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Multiplicación</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>La multiplicación es la representación de la suma de una misma cantidad varias veces. Una multiplicación se representa con los símbolos, “×” “⋅” o “()”.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 mb-4">
+                                <p>La multiplicación de 5 × 4 es lo mismo que:</p>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center"><strong>5 × 4 = 4 + 4 + 4 + 4 + 4 = 20</strong></p>
+                                    <p class="text-center">=</p>
+                                    <p class="text-center mb-0"><strong>4 × 5 = 5 + 5 + 5 + 5 = 20</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p>Los elementos de una multiplicación reciben el nombre de factores y el resultado producto o multiplicación. Así, en el ejemplo anterior, 5 y 4 son los factores y 20 es el producto.</p>
+                                <p>Para evitar la realización de sumas, se utilizan las tablas de multiplicar. Al multiplicar números de varios dígitos, éstos se colocan en vertical y se realiza el procedimiento según los ejemplos que se muestran a continuación.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>318 × 5 = ?</strong> </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong></p>
+                                <p>Se acomodan los factores y 5 multiplica de derecha a izquierda a cada uno de los dígitos del número 318 </p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>318</strong></p>
+                                        <p class="text-right mb-0"><strong>x 5</strong> </p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>1590</strong></p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-0 ml-5"><strong>Por tanto, el resultado es 1590</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>2120 × 24 = ?</strong> </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong></p>
+                                <p>Primero se multiplica 4 x 2120 </p>
+                                <div class="row mb-5">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>2120</strong></p>
+                                        <p class="text-right mb-0"><strong>x 24</strong> </p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>8480</strong></p>
+                                    </div>
+                                </div>
+                                <p>Después se multiplica 2 x 2120, el resultado se desplaza hacia la izquierda un lugar y se coloca debajo del anterior: </p>
+                                <div class="row mb-5">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>2120</strong></p>
+                                        <p class="text-right mb-0"><strong>x 24</strong> </p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>8480</strong></p>
+                                        <p class="text-right mb-0"><strong>4240 &nbsp</strong></p>
+                                    </div>
+                                </div>
+                                <p>Luego se suman los dos resultados de las multiplicaciones y se obtiene: </p>
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-auto px-5 border-right">
+                                        <p class="text-right mb-0"><strong>2120</strong></p>
+                                        <p class="text-right mb-0"><strong>x 24</strong> </p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>8480</strong></p>
+                                        <p class="text-right mb-0"><strong>+ 4240 &nbsp</strong></p>
+                                        <p class="text-right mb-0"><strong>------</strong></p>
+                                        <p class="text-right mb-0"><strong>50880</strong></p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-0 ml-5"><strong>El resultado de esta operación es 50880</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Multiplicación con signos de agrupación</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Los signos de agrupación que se utilizan son: paréntesis ( ), corchetes [ ] y llaves { }. Para simplificar y obtener el resultado de una operación con signos de agrupación, se debe:</p>
+                                <ul>
+                                    <li class="mb-3">Suprimir los signos de agrupación, multiplicando estos resultados por el número y signo que los anteceden.</li>
+                                    <li class="mb-3">Agrupar y sumar los números del mismo signo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 mb-4">
+                                <p>Basado en Aguilar (2015), calcular:</p>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>3(4 − 2) − 5(1 − 4) − (8 + 9) = ?</strong> </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <p><strong>Solución</strong></p>
+                                <p>Suprimir los signos de agrupación, multiplicando estos resultados por el número y signo que los anteceden:</p><img class="img-fluid" src="assets/images/pages/tema_6/info_011.svg" alt="">
+                                <p class="mt-3">Agrupar y sumar los números del mismo signo</p>
+                                <p><strong>= 12 + 20 − 6 − 5 − 8 − 9</strong></p>
+                                <p><strong>= 32 − 28 = 4</strong></p>
+                                <p><strong>Por tanto, el resultado de la operación es 4.</strong></p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row mb-5 justify-content-center align-items-center">
+                            <div class="col-12 mb-5">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>División</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <p>De acuerdo con Aguilar (2015) en la división:</p>
+                                <p>Si a y b son números enteros, la división de a entre b, siendo b un número entero diferente de cero, consiste en encontrar a los números enteros p y r tales que: </p>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-5"><img class="img-fluid" src="assets/images/pages/tema_6/info_02.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>Donde a recibe el nombre de dividendo, b el de divisor, p el de cociente y r residuo.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 mb-4">
+                                <p>En la división de 22 entre 4, el cociente es 5 y el residuo, 2 ya que:</p>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>22 = 4(5) + 2</strong> </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-5"><img class="img-fluid" src="assets/images/pages/tema_6/info_03.svg" alt="" style="width:100%"></div>
+                        </div>
+                        <div class="row justify-content-center align-items-start mb-6">
+                            <div class="col-12 mb-4">
+                                <p>En la división de 36 entre 6, el cociente es 6 y el residuo es 0, ya que:</p>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="jumbotron mb-4">
+                                    <p class="text-center mb-0"><strong>36 = 6(6) + 0</strong> </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-5"><img class="img-fluid mb-4" src="assets/images/pages/tema_6/info_04.svg" alt="" style="width:100%">
+                                <p class="mb-4">Las divisiones se representan con los siguientes símbolos: </p><img class="img-fluid" src="assets/images/pages/tema_6/info_05.svg" alt="" style="width:100%">
+                                <p class="text-center">Con una caja divisora </p>
+                                <p>Por medio de dos puntos 36: 6</p>
+                                <p>Con el signo ÷; 36 ÷ 6</p>
+                                <p>Con una raya horizontal (fracción): 36/6</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema6_2">
+                                    <h2>6.2 Problemas con enteros</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplos:</h3>
+                                <p>Basados en Aguilar (2015)</p>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <p>En el auditorio de un colegio se presenta una obra de teatro para profesores y estudiantes. En el colegio hay 28 profesores y 585 estudiantes, y el auditorio sólo tiene capacidad para 80 personas.</p>
+                                <p>Determinar cuántas presentaciones de la obra de teatro se deben realizar para que todo el estudiantado y profesorado la presencien.</p>
+                            </div>
+                            <div class="col-12">
+                                <h3>Solución</h3>
+                                <p>En total hay 28 + 585 = 613 personas; luego, se realiza una división entre el total de personas y la capacidad del auditorio para obtener el número de presentaciones.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 col-lg-6"><img src="assets/images/pages/tema_6/info_06.svg" alt="" style="width: 100%"></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Se observa que el cociente 7 representa al número de presentaciones con auditorio lleno, pero sobran 53, entonces se necesita una presentación más para que todos puedan asistir a la obra de teatro. </p>
+                                <p>Por lo tanto, se tienen que realizar 8 presentaciones. </p>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-auto"> </div><a href="media/documentos/complementarios/Ejercicios_Practica_Operaciones_con_enteros.pdf" target="_blank">
+                                <div class="media_link">
+                                    <div class="media_link__icon icon--lg"><img src="assets/images/pages/medialink.svg" alt=""></div>
+                                    <div class="media_link__txt">
+                                        <p><strong>Para aprender más</strong></p>
+                                        <p>Puedes practicar resolviendo los ejercicios.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-7">
+                <div class="container" id="tema_7">
+                    <div class="header-ecored">
+                        <h1>7. Sistema de medidas</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema7_1">
+                                    <h2>7.1 Sistemas de medidas más utilizados </h2>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>Los sistemas de medidas son los que permiten medir una magnitud y están definidos por unidades. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <h3 class="text-center">Clases de medidas más usadas</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_01.svg" alt="">
+                                <p class="text-center">Longitud</p>
+                            </div>
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_02.svg" alt="">
+                                <p class="text-center">Superficie</p>
+                            </div>
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_03.svg" alt="">
+                                <p class="text-center">Volumen</p>
+                            </div>
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_04.svg" alt="">
+                                <p class="text-center">Masa</p>
+                            </div>
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_05.svg" alt="">
+                                <p class="text-center">Tiempo</p>
+                            </div>
+                            <div class="col-6 col-md-2 d-flex flex-column"><img class="img-fluid my-auto" src="assets/images/pages/tema_7/icon_06.svg" alt="">
+                                <p class="text-center">Ángulos</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades de longitud</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Sistema métrico decimal</h3>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <p>De acuerdo con Aguilar (2015), el sistema métrico decimal es el conjunto de medidas que se derivan de la longitud denominada metro.</p>
+                                <p class="mb-5">La unidad de longitud es el metro y se representa con la letra <strong>m</strong>. </p>
+                                <p>Los múltiplos del metro se forman anteponiendo a la palabra metro los prefijos:</p>
+                                <ul>
+                                    <li>Deca (D) = diez</li>
+                                    <li>Hecto (H) = cien</li>
+                                    <li>Kilo (k) = mil</li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <p>Los submúltiplos se forman anteponiendo los prefijos: </p>
+                                <ul>
+                                    <li>Deci (d) = décima</li>
+                                    <li>Centi (c) = centésima</li>
+                                    <li>Mili (m) = milésima</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mt-5">Equivalencias de longitud en el sistema métrico decimal</p>
+                        <div class="row justify-content-center align-items-center mb-5 mb-lg-6">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_01.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                            </div>
+                            <div class="col-12">
+                                <p>Convertir 2.3 kilómetros a metros.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Solución</h3>
+                            </div>
+                            <div class="col-12">
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión</p>
+                                <p>Equivalencia: 1 km = 10<sup>3</sup> m</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center my-5 my-lg-6">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_02.svg" alt=""></div>
+                        </div>
+                        <p>Observe que el planteamiento inicial corresponde a una regla de tres simple directa utilizando la equivalencia correspondiente. </p>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades de superficie</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-5">
+                                <p>La unidad de superficie es el metro cuadrado, que es un cuadrado que tiene de lado un metro lineal y se representa con m<sup>2</sup>.</p>
+                            </div>
+                            <div class="col-12">
+                                <h3>Equivalencias de superficie en el sistema métrico decimal</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_03.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Convertir 63000 m<sup>2</sup> a km<sup>2</sup>.</p>
+                                <h3 class="mt-5">Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 1 km<sup>2</sup> = 10<sup>6</sup> m<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_04.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_05.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Obsérvese que al igual que el planteamiento inicial del problema anterior, este también corresponde a una regla de tres simple directa utilizando la equivalencia correspondiente.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades de volumen</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Las unidades de volumen son el metro cúbico, que es un cubo que tiene de arista un metro lineal y se representa con m3 y el litro cuya representación es (l).</p>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <h3>Equivalencias de volumen en el sistema métrico decimal</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_06.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_07.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Convertir 0,00616 Hm<sup>3</sup> a m<sup>3</sup>.</p>
+                                <h3 class="mt-5">Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 10<sup>3</sup> Hm<sup>3</sup> = 10<sup>9</sup> m<sup>3</sup></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_08.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_09.svg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Igual que en los ejemplos anteriores se inicia planteando una regla de tres simple directa para realizar la conversión.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades de masa</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>En el sistema internacional de unidades el kilogramo (kg) es el patrón de medida para las unidades de masa.</p>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <h3>Equivalencias de masa en el sistema métrico decimal</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_10.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Convertir 1300 cg a Dg.</p>
+                                <h3 class="mt-5">Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 10<sup>2</sup> Dg = 10<sup>5</sup>cg</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_11.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_12.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <P>También aquí se aplica la regla de tres simple como planteamiento inicial para resolver la equivalencia.</P>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades de tiempo</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-5">
+                                <h3>Equivalencias de masa en el sistema métrico decimal</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_13.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Convertir 5 horas a minutos.</p>
+                                <h3 class="mt-5">Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 1 h = 60 min</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_14.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-10 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_15.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>También aquí se aplica la regla de tres simple como planteamiento inicial para resolver la equivalencia.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3><strong>Unidades angulares</strong> </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-5">
+                                <p>Equivalencias de medidas angulares </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_16.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>Convertir 5° a minutos </p>
+                                <h3 class="mt-5">Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 1 ° = 60 min</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_17.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_18.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Como en los ejercicios anteriores el planteamiento debe partir de una regla de tres simple directa.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="line-title mt-3" id="tema7_2">
+                                    <h2>7.2 Problemas con unidades de medida </h2>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h3>Ejemplo</h3>
+                                <p>El área de una cancha de futbol es 50 Km<sup>2</sup>, pero es necesario indicar esta medida en m<sup>2</sup> , entonces ¿cuál es el área de la cancha?.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/img_01.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h3>Solución</h3>
+                                <p>Se emplea la equivalencia correspondiente y se efectúa la conversión.</p>
+                                <p>Equivalencia: 1 km<sup>2</sup> = 10<sup>6</sup> m<sup>2</sup>.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_19.svg" alt=""></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-5">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center"> <img class="img-fluid" src="assets/images/pages/tema_7/info_20.svg" alt=""></div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Luego el área de la cancha es 5000000 m<super>2</super>.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row mb-5">
+                            <div class="col-12 mb-3">
+                                <h3>Para practicar </h3>
+                                <p>Resuelve los ejercicios de la página 194 a la 197 de Aguilar (2015): </p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="media_link"><a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=220" target="_blank">
+                                        <div class="media_link__icon"><img src="assets/images/icons/icon_pdf.svg" alt=""></div>
+                                        <div class="media_link__txt">
+                                            <p><strong>Anexo.</strong> Problemas con unidades de medidas - Aguilar (2015)</p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="hr-divider mb-5"></div>
+                        <div class="row my-5">
+                            <div class="col-auto"> </div><a href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829&amp;pg=226" target="_blank">
+                                <div class="media_link">
+                                    <div class="media_link__icon icon--lg"><img src="assets/images/pages/medialink.svg" alt=""></div>
+                                    <div class="media_link__txt">
+                                        <p><strong>Consulta el recurso externo para ampliar el conocimiento</strong></p>
+                                        <p>Puedes profundizar en las unidades de tiempo y las angulares con: Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.). Pp. 200-203. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p> <strong class="mr-2">Divisibilidad:</strong>a es divisible entre b, si el residuo de a / b es cero. </p>
+                        <p> <strong class="mr-2">Estructura aditiva:</strong>es la capacidad de abordar situaciones en las que tiene aplicabilidad las operaciones de adición o suma y sustracción o resta.</p>
+                        <p> <strong class="mr-2">Estructura multiplicativa:</strong>es la capacidad de abordar situaciones en las que tiene aplicabilidad las operaciones de multiplicación o división. </p>
+                        <p> <strong class="mr-2">Fracción:</strong>es la expresión a/b , donde “a” se denomina numerador y “b” denominador, a y b son enteros y a puede ser menor o mayor que b. También b debe ser un número diferente de cero.</p>
+                        <p> <strong class="mr-2">Interés:</strong>es la cantidad que se paga por usar un dinero tomado en préstamo durante un tiempo determinado. </p>
+                        <p> <strong class="mr-2">Múltiplo:</strong>el múltiplo de un número es el que lo contiene un número exacto de veces </p>
+                        <p> <strong class="mr-2">Máximo Común Divisor - MCD:</strong>el mínimo común múltiplo de dos o más números a y b es el número más pequeño que es múltiplo de a y múltiplo de b.</p>
+                        <p> <strong class="mr-2">Mínimo Común Múltiplo - m.c.m:</strong>el mínimo común múltiplo de dos o más números a y b es el número más pequeño que es múltiplo de a y múltiplo de b.</p>
+                        <p> <strong class="mr-2">Números enteros:</strong>son aquellos que expresan una cantidad con relación a su unidad y están representados por el conjunto de los números naturales y los negativos. </p>
+                        <p> <strong class="mr-2">Número primo:</strong>número es primo que solo se puede dividir por sí mismo y la unidad. </p>
+                        <p><strong class="mr-2">Proporción:</strong>es una igualdad entre dos razones. </p>
+                        <p> <strong class="mr-2">Porcentaje:</strong>un porcentaje es una relación que expresa una proporción, es decir una parte de un total y se representa con el símbolo “%” que equivale a 1/100.</p>
+                        <p><strong class="mr-2">Razón:</strong>es la división o cociente entre dos números o dos cantidades que se pueden comparar entre sí y se expresan como una fracción.</p>
+                        <p> <strong class="mr-2">Sistemas de Medidas:</strong>son los permiten medir una magnitud y están definidos por unidades.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material. </th>
+                                    <th class="text-center">Enlace del Recurso.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.) Pearson Educación. Ejercicios Práctica de MCD_m.c.m.</td>
+                                    <td>PDF</td>
+                                    <td> <a href="media/documentos/complementarios/Ejercicios_Practica_MCD_mcm.pdf" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.) Pearson Educación. Ejercicios Práctica de Fracciones.</td>
+                                    <td>PDF</td>
+                                    <td> <a href="media/documentos/complementarios/Ejercicios_Practica_Operaciones_con_fracciones.pdf" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.) Pearson Educación. Ejercicios Práctica de Porcentajes.</td>
+                                    <td>PDF</td>
+                                    <td> <a href="media/documentos/complementarios/Ejercicios_Practica_Porcentajes.pdf" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.) Pearson Educación.Ejercicios Práctica de Operaciones con Enteros.</td>
+                                    <td>PDF</td>
+                                    <td> <a href="media/documentos/complementarios/Ejercicios_Practica_Operaciones_con_enteros.pdf" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Matefácil.com.(2017, 17 de agosto). Problema resuelto con división de fracciones.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=Wp9SABu3RRo" target="_blank"><span class="fa fa-link" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Aguilar, A. (2015). Matemáticas simplificadas. (4a. ed.). PP.-34. Pearson Educación.<a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=4829</a></p>
+                        <hr>
+                        <p>Ibáñez, P. (2018). Matemáticas I. pp. 66–72. Cengage.<a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=8213</a></p>
+                        <hr>
+                        <p>Jesús, J. (2017). Matemáticas financieras aplicadas. (6a. ed.) pp. 19-20, 34-35, 56-59. Ecoe Ediciones.<a class="ml-2" href="http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=5721" target="_blank">http://www.ebooks7-24.com.bdigital.sena.edu.co/?il=5721</a></p>
+                        <hr>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-picture-o fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Fotografías y vectores tomados de <a href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-creative-commons fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander</span></p>
+                        <p class="footer-texto mb-2"><strong>Olga Lucía Mogollón Carvajal</strong><br /><span class="text-small">Experta temática<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Oscar Andrés Fernández Urrego</strong><br /><span class="text-small">Evaluador instruccional<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Adriana Lozano Zapata</strong><br /><span class="text-small">Revisora de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro para la Industria de la Comunicación Gráfica - CENIGRAF</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Vilma Lucía Perilla Méndez</strong><br /><span class="text-small">Diseñadora Instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Gestión Industrial</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Ernesto Navarro Jaimes</strong><br />
+                            <strong>José Jaime Luis Tang Pinzón</strong><br />
+                            <strong>Lady Adriana Ariza Luque</strong><br />
+                            <strong>Maria Camila Ovalle Ospina </strong><br />
+                            <strong>Oleg Litvin</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco</strong><br />
+                            <strong>Luis Fernando Botero Mendoza</strong><br /><span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Daniel Ricardo Mutis Gómez</strong><br />
+                            <strong>Edward Leonardo Pico Cabra</strong><br />
+                            <strong>Jhon Jairo Urueta Alvarez</strong><br /><span class="text-small">Desarrollo Front-End<br /></span></p>
+                        <p class="footer-texto mt-3"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <h4 class="footer-subtitulo-2 mt-4">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"> <strong>Brayan Pinto Diaz</strong><br />
+                            <strong>Edilson Laverde Molina</strong><br />
+                            <strong>Ricardo Alfonso Gonzalez Vargas</strong><br /><span class="text-small">Validación de recursos<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO DE COMERCIO Y SERVICIOS</span><br><span class="text-small">Regional Tolima </span></p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-column justify-content-center"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>
